@@ -1,0 +1,15 @@
+# Web App & Dashboard
+streamlit>=1.35.0
+pandas>=2.2.0
+plotly>=5.22.0
+
+# LLM Providers (Multi-provider support: Google Gemini, OpenAI, Groq, Anthropic)
+google-genai>=0.1.0
+google-generativeai>=0.7.0
+openai>=1.30.0
+groq>=0.9.0
+
+# Environment & Utilities
+python-dotenv>=1.0.1
+pydantic>=2.7.0
+requests>=2.32.0

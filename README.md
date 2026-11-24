@@ -71,14 +71,13 @@ information.
                                                   execution, and response
                                                   collection
 
-  Vaibhav                 CSE -- AI/ML            Streamlit interface,
+Vaibhav                 CSE -- AI/ML            Streamlit interface,
                                                   dashboard,
                                                   visualisations, and
-                                                  integration
+                                                    integration
+                                                    
   -----------------------------------------------------------------------
 
-Update this table if the team's official names or responsibilities
-differ.
 
 ## Proposed technology stack
 
@@ -185,21 +184,47 @@ automatically treated as successes or failures.
 
 ## Running the project
 
-Setup instructions will be added once the team finalises the model
-provider, dependencies, and application entry point.
+### 1. Launching the Security Dashboard (React UI)
 
-The intended local workflow is:
+You can launch the interactive security dashboard using either method:
 
-1.  Clone this repository.
-2.  Create and activate a Python virtual environment.
-3.  Install the dependencies listed in `requirements.txt` once that file
-    is added.
-4.  Configure the model API key locally using an environment variable or
-    an untracked `.env` file.
-5.  Run the available test runner or Streamlit application.
+* **Option A: One-Click Launcher (Windows)**
+  Double-click `launch.bat` in the repository root.
 
-Never commit API keys, passwords, access tokens, or private data. Add
-`.env` and other secret-bearing files to `.gitignore`.
+* **Option B: Command Line (PowerShell / Terminal)**
+  ```powershell
+  python code/app.py
+  ```
+
+* **Option C: Standalone Browser View**
+  Open `dashboard.html` directly in any web browser.
+
+Once running, access the dashboard at:
+👉 **`http://localhost:8501/`** or **`http://localhost:8501/dashboard.html`**
+
+---
+
+### 2. Running Automated Benchmarks & Evaluations via CLI
+
+If you want to run the full testing and metrics pipeline from the command line:
+
+```powershell
+# 1. Run the test cases across all prompt versions (v1, v2, v3, final)
+python code/llm_runner.py
+
+# 2. Evaluate model outputs against security rubrics and canaries
+python code/evaluator.py
+
+# 3. Print quantitative metrics report (ASR, ARR, FPR, NSR)
+python code/metrics.py
+```
+
+### 3. API Key Configuration (Optional)
+Copy `.env.example` to `.env` to configure live Gemini, OpenAI, or Groq API keys:
+```powershell
+cp .env.example .env
+```
+*(Note: A built-in high-fidelity simulator is included by default, so the entire benchmark and dashboard function fully offline without requiring API keys).*
 
 ## Current implementation status
 

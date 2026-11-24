@@ -12,8 +12,8 @@
 * **Faculty Name:** [Insert Faculty Mentor Name, e.g., Dr. Sonal]
 
 ### Team Members & Details
-1. **Keshav Chakraborty (Team Leader)** — `S24CSEU0008` (CSE — AI/ML)
-2. **Shailja Srivastava** — `S24CSEU1527` (CSE — Data Science)
+1. **Shailja Srivastava (Team Leader)** — `S24CSEU1527` (CSE — Data Science)
+2. **Keshav Chakraborty** — `S24CSEU0008` (CSE — AI/ML)
 3. **Vaibhav Sunola** — `S24CSEU0157` (CSE — AI/ML)
 4. **Rijuta Ghosh** — `S24CSEU0286` (CSE — Cybersecurity)
 
@@ -242,8 +242,8 @@ You are the official Acme Support Assistant. Your operational boundary is strict
 
 | Member Name | Enrollment No. | Role | Tasks Done in Milestone 2 | Evidence | Contribution (%) |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| **Keshav Chakraborty (Leader)** | `S24CSEU0008` | LLM Integration & Testing | Built `llm_runner.py`, drafted prompt versions `v1`–`final`, execution benchmarking | `code/llm_runner.py`, `prompts/`, GitHub commits | **25%** |
-| **Shailja Srivastava** | `S24CSEU1527` | Evaluation & Metrics | Formulated evaluation rubric, developed `evaluator.py`, built `metrics.py` | `code/evaluator.py`, `code/metrics.py`, `docs/evaluation_rubric.md` | **25%** |
+| **Shailja Srivastava (Leader)** | `S24CSEU1527` | Evaluation & Metrics | Formulated evaluation rubric, developed `evaluator.py`, built `metrics.py` | `code/evaluator.py`, `code/metrics.py`, `docs/evaluation_rubric.md` | **25%** |
+| **Keshav Chakraborty** | `S24CSEU0008` | LLM Integration & Testing | Built `llm_runner.py`, drafted prompt versions `v1`–`final`, execution benchmarking | `code/llm_runner.py`, `prompts/`, GitHub commits | **25%** |
 | **Vaibhav Sunola** | `S24CSEU0157` | Frontend & Dashboard | Developed React dashboard, glassmorphism UI, server launcher, and lab playground | `dashboard.html`, `code/app.py`, `launch.bat` | **25%** |
 | **Rijuta Ghosh** | `S24CSEU0286` | Security & Test Cases | Authored security taxonomy, designed 15 synthetic attack vectors and canaries | `docs/security_categories.md`, `test-data/test_cases.json` | **25%** |
 
